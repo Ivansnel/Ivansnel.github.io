@@ -1,0 +1,85 @@
+* {
+  margin: 0px;
+  padding: px;
+  font-family: arial;
+  line-height: 130%
+}
+
+div.item1 { grid-area: header; }
+div.item2 { grid-area: menu; }
+div.item3 { grid-area: main; }
+div.item4 { grid-area: right; }
+div.item5 { grid-area: footer; }
+div.item6 { grid-area: links; }
+div.item7 { grid-area: tabel; }
+
+div.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'links links footer footer tabel tabel';
+  grid-gap: 2px;
+  background-color: rgb(75, 76, 84);
+  padding: 5px;
+}
+
+div.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  padding: 5px;
+  font-size: 100%;
+  background-image: url(file:///C:/Users/qyoti/Desktop/Bureaublad/naamloos.jpg);
+}
+
+body {
+}
+
+table, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 2px;
+}
+
+p {
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5 {
+  font-style: normal;
+}
+
+td.kat {
+  background-color: rgb(132, 206, 224);
+}
+
+td.mens {
+  background-color: rgb(252, 83, 83);
+}
+
+h4.kopje {
+  color: rgb(148, 91, 0)
+}
+
+ul.menu {
+  background-color: white;
+}
+
+ul.menu li {
+ border: 2px solid black;
+ border-collapse: separate;
+ list-style: outside circle none;
+ display: block;
+ padding: 2px;
+}
+
+ul.menu li:hover {
+  background-color: rgb(175, 255, 135);
+}
+
+ul.menu a:link {
+  text-decoration: none;
+}
